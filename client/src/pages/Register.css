@@ -1,0 +1,141 @@
+/* ========================================
+   REGISTER PAGE
+======================================== */
+
+.register-page {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 40px 20px;
+  background: #f8faf6;
+}
+
+.register-card {
+  width: 100%;
+  max-width: 500px;
+  padding: 40px;
+  background: white;
+  border: 1px solid #e5e7eb;
+  border-radius: 25px;
+  box-shadow: 0 20px 50px rgba(20, 83, 45, 0.1);
+}
+
+.register-logo {
+  width: 60px;
+  height: 60px;
+  margin: 0 auto 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 18px;
+  background: #dcfce7;
+  font-size: 30px;
+}
+
+.register-card h1 {
+  margin: 0;
+  text-align: center;
+  color: #123524;
+  font-size: 30px;
+}
+
+.register-subtitle {
+  margin: 10px 0 30px;
+  text-align: center;
+  color: #667085;
+  font-size: 14px;
+}
+
+.form-group {
+  margin-bottom: 18px;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 8px;
+  color: #374151;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.form-group input,
+.form-group select {
+  width: 100%;
+  padding: 13px 14px;
+  border: 1px solid #d1d5db;
+  border-radius: 10px;
+  outline: none;
+  font-size: 14px;
+  background: white;
+}
+
+.form-group input:focus,
+.form-group select:focus {
+  border-color: #16a34a;
+  box-shadow: 0 0 0 3px rgba(22, 163, 74, 0.1);
+}
+
+.register-submit {
+  width: 100%;
+  margin-top: 8px;
+  padding: 14px;
+  border: none;
+  border-radius: 11px;
+  background: #166534;
+  color: white;
+  font-size: 15px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.2s ease;
+}
+
+.register-submit:hover {
+  background: #14532d;
+  transform: translateY(-1px);
+}
+
+.login-text {
+  margin: 25px 0 0;
+  text-align: center;
+  color: #667085;
+  font-size: 14px;
+}
+
+.login-text a {
+  color: #15803d;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+@media (max-width: 500px) {
+  .register-card {
+    padding: 30px 22px;
+  }
+
+  .register-card h1 {
+    font-size: 26px;
+  }
+}
+/* ========================================
+   FORM VALIDATION
+======================================== */
+
+.input-error {
+  border-color: #dc2626 !important;
+  background: #fff7f7;
+}
+
+.error-message {
+  margin: 6px 0 0;
+  color: #dc2626;
+  font-size: 12px;
+  font-weight: 500;
+}
+
+.password-hint {
+  margin: 6px 0 0;
+  color: #6b7280;
+  font-size: 12px;
+  line-height: 1.5;
+}

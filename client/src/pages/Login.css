@@ -1,0 +1,168 @@
+/* ========================================
+   LOGIN PAGE
+======================================== */
+
+.login-page {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 40px 20px;
+  background: #f8faf6;
+}
+
+.login-card {
+  width: 100%;
+  max-width: 430px;
+  padding: 45px;
+  background: white;
+  border: 1px solid #e5e7eb;
+  border-radius: 25px;
+  box-shadow: 0 20px 50px rgba(20, 83, 45, 0.10);
+}
+
+.login-logo {
+  width: 60px;
+  height: 60px;
+  margin: 0 auto 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 18px;
+  background: #dcfce7;
+  font-size: 30px;
+}
+
+.login-card h1 {
+  margin: 0;
+  text-align: center;
+  color: #123524;
+  font-size: 32px;
+}
+
+.login-subtitle {
+  margin: 10px 0 30px;
+  text-align: center;
+  color: #667085;
+  font-size: 14px;
+}
+
+
+/* FORM */
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 8px;
+  color: #374151;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.form-group input {
+  width: 100%;
+  padding: 13px 14px;
+  border: 1px solid #d1d5db;
+  border-radius: 10px;
+  outline: none;
+  font-size: 14px;
+}
+
+.form-group input:focus {
+  border-color: #16a34a;
+  box-shadow: 0 0 0 3px rgba(22, 163, 74, 0.10);
+}
+
+
+/* OPTIONS */
+
+.login-options {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 25px;
+  font-size: 13px;
+}
+
+.remember {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  color: #667085;
+}
+
+.login-options a,
+.register-text a {
+  color: #15803d;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+
+/* LOGIN BUTTON */
+
+.login-submit {
+  width: 100%;
+  padding: 14px;
+  border: none;
+  border-radius: 11px;
+  background: #166534;
+  color: white;
+  font-size: 15px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.2s ease;
+}
+
+.login-submit:hover {
+  background: #14532d;
+  transform: translateY(-1px);
+}
+
+
+/* DIVIDER */
+
+.login-divider {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin: 28px 0;
+  color: #9ca3af;
+  font-size: 13px;
+}
+
+.login-divider::before,
+.login-divider::after {
+  content: "";
+  flex: 1;
+  height: 1px;
+  background: #e5e7eb;
+}
+
+
+/* REGISTER */
+
+.register-text {
+  margin: 0;
+  text-align: center;
+  color: #667085;
+  font-size: 14px;
+}
+
+
+/* MOBILE */
+
+@media (max-width: 500px) {
+
+  .login-card {
+    padding: 30px 22px;
+  }
+
+  .login-card h1 {
+    font-size: 28px;
+  }
+
+}
